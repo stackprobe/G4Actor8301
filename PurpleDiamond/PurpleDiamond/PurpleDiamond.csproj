@@ -136,6 +136,10 @@
     <Compile Include="ResourcePicture.cs" />
     <Compile Include="ResourceSE.cs" />
     <Compile Include="Tests\Test0001.cs" />
+    <Compile Include="Game3Common\Crash.cs" />
+    <Compile Include="Game3Common\CrashUtils.cs" />
+    <Compile Include="Game3Common\SceneKeeper.cs" />
+    <Compile Include="Game3Common\SlideUtils.cs" />
     <EmbeddedResource Include="MainWin.resx">
       <DependentUpon>MainWin.cs</DependentUpon>
     </EmbeddedResource>
