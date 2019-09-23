@@ -31,16 +31,20 @@ namespace Charlotte.Games
 						goto endLoad;
 
 					MapCell cell = map.GetCell(x, y);
+					var tokens = new BluffList<string>(lines[c++].Split('\t')).FreeRange(""); // 項目が増えても良いように -> FreeRange("")
+					int d = 0;
 
-					// TODO
-					// TODO
-					// TODO
+					cell.Kind = (MapCell.Kind_e)int.Parse(tokens[d++]);
+					cell.SurfacePicture = MapTileManager.GetTile(tokens[d++]);
+					cell.TilePicture = MapTileManager.GetTile(tokens[d++]);
 
 					// 新しい項目をここへ追加...
 				}
 			}
 			while (c < lines.Length)
 			{
+				// memo: Save()時にプロパティ部分も上書きされるので注意してね。
+
 				var tokens = lines[c++].Split("=".ToArray(), 2);
 
 				string name = tokens[0].Trim();
@@ -77,16 +81,15 @@ namespace Charlotte.Games
 				for (int y = 0; y < h; y++)
 				{
 					MapCell cell = map.GetCell(x, y);
+					List<string> tokens = new List<string>();
 
-					// TODO
+					tokens.Add("" + (int)cell.Kind);
+					tokens.Add(cell.SurfacePicture.Name);
+					tokens.Add(cell.TilePicture.Name);
 
 					// 新しい項目をここへ追加...
 
-					// TODO
-					// TODO
-					// TODO
-
-					//lines.Add(string.Join("\t", tokens).TrimEnd());
+					lines.Add(string.Join("\t", tokens).TrimEnd());
 				}
 			}
 			foreach (KeyValuePair<string, string> pair in map.GetProperties())

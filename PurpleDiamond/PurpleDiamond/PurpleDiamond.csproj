@@ -127,7 +127,10 @@
     <Compile Include="Games\Map.cs" />
     <Compile Include="Games\MapCell.cs" />
     <Compile Include="Games\MapLoader.cs" />
+    <Compile Include="Games\MapTile.cs" />
+    <Compile Include="Games\MapTileManager.cs" />
     <Compile Include="Ground.cs" />
+    <Compile Include="Mains\TitleMenu.cs" />
     <Compile Include="MainWin.cs">
       <SubType>Form</SubType>
     </Compile>

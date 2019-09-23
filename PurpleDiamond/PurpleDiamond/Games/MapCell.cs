@@ -9,8 +9,8 @@ namespace Charlotte.Games
 	public class MapCell
 	{
 		public Kind_e Kind = Kind_e.SPACE;
-		public DDPicture SurfacePicture = null; // null == 画像無し
-		public DDPicture TilePicture = null; // null == 画像無し
+		public MapTile SurfacePicture = null; // null == 画像無し
+		public MapTile TilePicture = null; // null == 画像無し
 
 		// <---- prm
 
