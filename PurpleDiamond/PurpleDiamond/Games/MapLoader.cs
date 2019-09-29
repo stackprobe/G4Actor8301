@@ -47,11 +47,8 @@ namespace Charlotte.Games
 
 				var tokens = lines[c++].Split("=".ToArray(), 2);
 
-				string name = tokens[0].Trim();
-				string value = tokens[1].Trim();
-
-				if (name == "") throw new DDError();
-				if (value == "") throw new DDError();
+				string name = tokens[0];
+				string value = tokens[1];
 
 				map.AddProperty(name, value);
 			}

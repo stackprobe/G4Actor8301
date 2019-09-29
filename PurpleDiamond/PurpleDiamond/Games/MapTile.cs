@@ -8,6 +8,8 @@ namespace Charlotte.Games
 {
 	public class MapTile
 	{
+		public const int WH = 32; // タイル(マップセル)の幅と高さ [ピクセル]
+
 		public string Name;
 		public DDPicture Picture;
 

@@ -14,8 +14,6 @@ namespace Charlotte.Games
 
 		public static Game I = null;
 
-		private Player Player = new Player();
-
 		public Game()
 		{
 			I = this;
@@ -26,10 +24,30 @@ namespace Charlotte.Games
 			I = null;
 		}
 
+		private Player Player = new Player();
+
+		private bool CamSlideMode; // ? モード中
+		private int CamSlideCount;
+		private int CamSlideX; // -1 ～ 1
+		private int CamSlideY; // -1 ～ 1
+
+		public int Frame;
+
 		public void Perform()
 		{
-			for (; ; )
+			for (; ; this.Frame++)
 			{
+				{
+					double targCamX = this.Player.X - DDConsts.Screen_W / 2 + (this.CamSlideX * DDConsts.Screen_W / 3);
+					double targCamY = this.Player.Y - DDConsts.Screen_H / 2 + (this.CamSlideY * DDConsts.Screen_H / 3);
+
+					DDUtils.Range(ref targCamX, 0.0, this.Map.W * MapTile.WH - DDConsts.Screen_W);
+					DDUtils.Range(ref targCamY, 0.0, this.Map.H * MapTile.WH - DDConsts.Screen_H);
+
+					DDUtils.Approach(ref DDGround.Camera.X, targCamX, 0.8);
+					DDUtils.Approach(ref DDGround.Camera.Y, targCamY, 0.8);
+				}
+
 				// 描画ここから
 
 				this.DrawWall();
@@ -44,12 +62,11 @@ namespace Charlotte.Games
 
 		private void DrawWall()
 		{
-			throw new NotImplementedException();
+			DDCurtain.DrawCurtain(); // kari
 		}
 
 		private void DrawMap()
 		{
-			throw new NotImplementedException();
 		}
 
 		private void DrawEnemies()

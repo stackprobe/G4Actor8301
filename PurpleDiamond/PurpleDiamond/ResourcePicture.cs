@@ -13,6 +13,7 @@ namespace Charlotte
 		public DDPicture Pic_DeepForestA5 = DDPictureLoaders.Standard(@"PixelArtWorld\DeepForest-A5.png");
 		public DDPicture Pic_DeepForestB = DDPictureLoaders.Standard(@"PixelArtWorld\DeepForest-B.png");
 		public DDPicture Pic_RuinF = DDPictureLoaders.Standard(@"PixelArtWorld\Ruin-F.png");
+
 		public DDPicture Pic_LFCharaSogen01 = DDPictureLoaders.Standard(@"PixelArtWorld\LF-Chara-Sogen01.png");
 
 		public DDTable<DDPicture> DeepForestA1;
@@ -20,6 +21,7 @@ namespace Charlotte
 		public DDTable<DDPicture> DeepForestA5;
 		public DDTable<DDPicture> DeepForestB;
 		public DDTable<DDPicture> RuinF;
+
 		public DDTable<DDPicture> LFCharaSogen01;
 
 		public ResourcePicture()
@@ -29,6 +31,7 @@ namespace Charlotte
 			this.DeepForestA5 = GetDerivationTable(this.Pic_DeepForestA5, 8, 16);
 			this.DeepForestB = GetDerivationTable(this.Pic_DeepForestB, 16, 16);
 			this.RuinF = GetDerivationTable(this.Pic_RuinF, 16, 16);
+
 			this.LFCharaSogen01 = GetDerivationTable(this.Pic_LFCharaSogen01, 12, 8);
 		}
 

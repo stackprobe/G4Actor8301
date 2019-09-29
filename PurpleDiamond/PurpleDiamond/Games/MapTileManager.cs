@@ -18,7 +18,6 @@ namespace Charlotte.Games
 			Add(Ground.I.Picture.DeepForestA5, "DeepForestA5");
 			Add(Ground.I.Picture.DeepForestB, "DeepForestB");
 			Add(Ground.I.Picture.RuinF, "RuinF");
-			Add(Ground.I.Picture.LFCharaSogen01, "LFCharaSogen01");
 		}
 
 		private static void Add(DDTable<DDPicture> table, string tableName)
