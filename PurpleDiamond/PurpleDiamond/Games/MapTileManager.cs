@@ -9,6 +9,7 @@ namespace Charlotte.Games
 {
 	public static class MapTileManager
 	{
+		private static List<string> Names = new List<string>();
 		private static Dictionary<string, MapTile> Tiles = DictionaryTools.Create<MapTile>();
 
 		public static void INIT()
@@ -27,6 +28,7 @@ namespace Charlotte.Games
 
 		private static void Add(DDPicture picture, string name)
 		{
+			Names.Add(name);
 			Tiles.Add(name, new MapTile()
 			{
 				Name = name,
@@ -43,6 +45,16 @@ namespace Charlotte.Games
 				throw new DDError("そんなタイルありません。" + name);
 
 			return Tiles[name];
+		}
+
+		public static List<string> GetNames()
+		{
+			return Names;
+		}
+
+		public static int GetCount()
+		{
+			return Names.Count;
 		}
 	}
 }

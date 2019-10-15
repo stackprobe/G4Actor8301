@@ -145,6 +145,7 @@
     <Compile Include="ResourceMusic.cs" />
     <Compile Include="ResourcePicture.cs" />
     <Compile Include="ResourceSE.cs" />
+    <Compile Include="Tests\Games\MapTileManagerTest.cs" />
     <Compile Include="Tests\Test0001.cs" />
     <Compile Include="Game3Common\Crash.cs" />
     <Compile Include="Game3Common\CrashUtils.cs" />

@@ -7,6 +7,8 @@ using Charlotte.Common;
 using Charlotte.Tools;
 using Charlotte.Tests;
 using Charlotte.Mains;
+using Charlotte.Tests.Games;
+using Charlotte.Games;
 
 namespace Charlotte
 {
@@ -40,6 +42,11 @@ namespace Charlotte
 				// < Font
 
 				Ground.I = new Ground();
+
+				// *.INIT
+				{
+					MapTileManager.INIT();
+				}
 			};
 
 			DDAdditionalEvents.Save = lines =>
@@ -80,7 +87,8 @@ namespace Charlotte
 		private void Main4_Debug()
 		{
 			//new Test0001().Test01();
-			new TitleMenu().Perform();
+			//new TitleMenu().Perform();
+			new MapTileManagerTest().Test01();
 		}
 
 		private void Main4_Release()
