@@ -18,7 +18,7 @@ namespace Charlotte.Tests.Games
 			{
 				if (DDInput.DIR_8.IsPound())
 				{
-					index -= MapTile.Screen_W;
+					index -= Consts.SCREEN_MAP_W;
 				}
 				if (DDInput.DIR_4.IsPound())
 				{
@@ -30,7 +30,7 @@ namespace Charlotte.Tests.Games
 				}
 				if (DDInput.DIR_2.IsPound())
 				{
-					index += MapTile.Screen_W;
+					index += Consts.SCREEN_MAP_W;
 				}
 				index += MapTileManager.GetCount();
 				index %= MapTileManager.GetCount();
@@ -42,9 +42,9 @@ namespace Charlotte.Tests.Games
 				{
 					int i = index;
 
-					for (int y = 0; y < MapTile.Screen_H; y++)
+					for (int y = 0; y < Consts.SCREEN_MAP_H; y++)
 					{
-						for (int x = 0; x < MapTile.Screen_W; x++)
+						for (int x = 0; x < Consts.SCREEN_MAP_W; x++)
 						{
 							DDDraw.DrawSimple(MapTileManager.GetTile(MapTileManager.GetNames()[i]).Picture, x * MapTile.WH, y * MapTile.WH);
 
