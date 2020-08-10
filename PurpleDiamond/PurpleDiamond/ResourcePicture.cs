@@ -8,13 +8,13 @@ namespace Charlotte
 {
 	public class ResourcePicture
 	{
-		public DDPicture Pic_DeepForestA1 = DDPictureLoaders.Standard(@"PixelArtWorld\DeepForest-A1.png");
-		public DDPicture Pic_DeepForestA2 = DDPictureLoaders.Standard(@"PixelArtWorld\DeepForest-A2.png");
-		public DDPicture Pic_DeepForestA5 = DDPictureLoaders.Standard(@"PixelArtWorld\DeepForest-A5.png");
-		public DDPicture Pic_DeepForestB = DDPictureLoaders.Standard(@"PixelArtWorld\DeepForest-B.png");
-		public DDPicture Pic_RuinF = DDPictureLoaders.Standard(@"PixelArtWorld\Ruin-F.png");
+		public DDPicture Pic_DeepForestA1 = DDPictureLoaders.Standard(@"Etoile\PurpleDiamond\PixelArtWorld\DeepForest-A1.png");
+		public DDPicture Pic_DeepForestA2 = DDPictureLoaders.Standard(@"Etoile\PurpleDiamond\PixelArtWorld\DeepForest-A2.png");
+		public DDPicture Pic_DeepForestA5 = DDPictureLoaders.Standard(@"Etoile\PurpleDiamond\PixelArtWorld\DeepForest-A5.png");
+		public DDPicture Pic_DeepForestB = DDPictureLoaders.Standard(@"Etoile\PurpleDiamond\PixelArtWorld\DeepForest-B.png");
+		public DDPicture Pic_RuinF = DDPictureLoaders.Standard(@"Etoile\PurpleDiamond\PixelArtWorld\Ruin-F.png");
 
-		public DDPicture Pic_LFCharaSogen01 = DDPictureLoaders.Standard(@"PixelArtWorld\LF-Chara-Sogen01.png");
+		public DDPicture Pic_LFCharaSogen01 = DDPictureLoaders.Standard(@"Etoile\PurpleDiamond\PixelArtWorld\LF-Chara-Sogen01.png");
 
 		public DDTable<DDPicture> DeepForestA1;
 		public DDTable<DDPicture> DeepForestA2;

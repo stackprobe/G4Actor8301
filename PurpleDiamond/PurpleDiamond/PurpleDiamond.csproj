@@ -123,6 +123,13 @@
     <Compile Include="Common\DDUserDatStrings.cs" />
     <Compile Include="Common\DDUtils.cs" />
     <Compile Include="Common\DDWin32.cs" />
+    <Compile Include="Common\MaskGZDataUtils\MaskGZDataEng.cs" />
+    <Compile Include="Common\Options\Crash.cs" />
+    <Compile Include="Common\Options\CrashUtils.cs" />
+    <Compile Include="Common\Options\CrashView.cs" />
+    <Compile Include="Common\Options\CResource.cs" />
+    <Compile Include="Common\Options\SceneKeeper.cs" />
+    <Compile Include="Common\Options\SlideUtils.cs" />
     <Compile Include="Consts.cs" />
     <Compile Include="Games\Game.cs" />
     <Compile Include="Games\Map.cs" />
@@ -147,12 +154,6 @@
     <Compile Include="ResourceSE.cs" />
     <Compile Include="Tests\Games\MapTileManagerTest.cs" />
     <Compile Include="Tests\Test0001.cs" />
-    <Compile Include="Game3Common\Crash.cs" />
-    <Compile Include="Game3Common\CrashUtils.cs" />
-    <Compile Include="Game3Common\CrashView.cs" />
-    <Compile Include="Game3Common\CResource.cs" />
-    <Compile Include="Game3Common\SceneKeeper.cs" />
-    <Compile Include="Game3Common\SlideUtils.cs" />
     <EmbeddedResource Include="MainWin.resx">
       <DependentUpon>MainWin.cs</DependentUpon>
     </EmbeddedResource>
