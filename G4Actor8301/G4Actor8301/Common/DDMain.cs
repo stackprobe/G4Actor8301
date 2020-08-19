@@ -135,10 +135,20 @@ namespace Charlotte.Common
 
 			// app > @ GameStart
 
-			DDFontRegister.Add(@"Fairy\Donut3\Font\Genkai-Mincho-font\genkai-mincho.ttf");
-			DDFontRegister.Add(@"Fairy\Donut3\Font\riitf\RiiT_F.otf");
+			// Font
+			{
+				//DDFontRegister.Add(@"Fairy\Donut3\Font\Genkai-Mincho-font\genkai-mincho.ttf");
+				//DDFontRegister.Add(@"Fairy\Donut3\Font\riitf\RiiT_F.otf");
+			}
 
 			Ground.I = new Ground();
+
+			// *.INIT
+			{
+				Charlotte.Games.MapTileManager.INIT();
+			}
+
+			MainWin.I.PostGameStart_G3();
 
 			// < app
 
