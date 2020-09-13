@@ -7,6 +7,11 @@ C:\Factory\SubTools\makeDDResourceFile.exe ^
 	out\Resource.dat ^
 	C:\Factory\Program\MaskGZDataForDonut3\MaskGZData.exe
 
+C:\Factory\SubTools\makeDDResourceFile.exe ^
+	res ^
+	out\res.dat ^
+	C:\Factory\Program\MaskGZDataForDonut3\MaskGZData.exe
+
 C:\Factory\SubTools\CallConfuserCLI.exe G4Actor8301\G4Actor8301\bin\Release\G4Actor8301.exe out\G4Actor8301.exe
 rem COPY /B G4Actor8301\G4Actor8301\bin\Release\G4Actor8301.exe out
 COPY /B G4Actor8301\G4Actor8301\bin\Release\Chocolate.dll out
