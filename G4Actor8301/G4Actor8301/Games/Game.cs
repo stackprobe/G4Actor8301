@@ -26,10 +26,10 @@ namespace Charlotte.Games
 
 		private Player Player = new Player();
 
-		private bool CamSlideMode; // ? モード中
-		private int CamSlideCount;
-		private int CamSlideX; // -1 ～ 1
-		private int CamSlideY; // -1 ～ 1
+		//private bool CamSlideMode; // ? モード中
+		//private int CamSlideCount;
+		private int CamSlideX = 0; // -1 ～ 1
+		private int CamSlideY = 0; // -1 ～ 1
 
 		public int Frame;
 

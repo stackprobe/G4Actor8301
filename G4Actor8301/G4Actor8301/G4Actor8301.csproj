@@ -138,7 +138,7 @@
     <Compile Include="Games\MapTileManager.cs" />
     <Compile Include="Games\Player.cs" />
     <Compile Include="Ground.cs" />
-    <Compile Include="Mains\TitleMenu.cs" />
+    <Compile Include="Games\TitleMenu.cs" />
     <Compile Include="MainWin.cs">
       <SubType>Form</SubType>
     </Compile>

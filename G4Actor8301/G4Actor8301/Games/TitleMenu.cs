@@ -6,7 +6,7 @@ using Charlotte.Tools;
 using Charlotte.Common;
 using DxLibDLL;
 
-namespace Charlotte.Mains
+namespace Charlotte.Games
 {
 	public class TitleMenu
 	{
